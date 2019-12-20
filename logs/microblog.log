@@ -1,0 +1,79 @@
+2019-12-23 17:01:14,533 ERROR: Exception on /register [GET] [in c:\python\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python\microblog\app\routes.py", line 81, in register
+    return render_template('register.html', title='Register', form=form)
+  File "c:\python\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\python\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\python\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\python\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\python\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python\microblog\app\templates\register.html", line 1, in <module>
+    {% extends "base.html" %}
+jinja2.exceptions.TemplateRuntimeError: extended multiple times
+2019-12-23 17:01:24,703 ERROR: Exception on /register [GET] [in c:\python\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python\microblog\app\routes.py", line 81, in register
+    return render_template('register.html', title='Register', form=form)
+  File "c:\python\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\python\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\python\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\python\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\python\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python\microblog\app\templates\register.html", line 1, in <module>
+    {% extends "base.html" %}
+jinja2.exceptions.TemplateRuntimeError: extended multiple times
+2019-12-23 17:01:49,125 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 17:40:34,265 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 17:42:25,079 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 17:53:24,131 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 17:55:56,064 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 17:58:56,810 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:16:36,348 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:17:09,155 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:17:24,184 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:17:31,980 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:18:57,195 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:22:52,072 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:23:01,480 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:23:09,398 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:25:59,028 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:27:17,165 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
+2019-12-23 18:53:24,455 INFO: Microblog startup [in C:\Python\microblog\app\__init__.py:51]
